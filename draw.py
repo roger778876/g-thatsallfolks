@@ -155,9 +155,6 @@ def add_letter_d(polygons, x, y, z):
     add_polygon(polygons, p0[0]+x, p0[1]+y, p0[2]+z,
                           p1[0]+x, p1[1]+y, p1[2]+z,
                           p2[0]+x, p2[1]+y, p2[2]+z)
-    print p0
-    print p1
-    print p2
     point += 3
 
 
