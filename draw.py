@@ -51,7 +51,9 @@ def scanline_convert(polygons, i, screen, zbuffer, color ):
       x1 = points[MID][0]
       z1 = points[MID][2]
 
-
+#############
+# ALPHABET! #
+#############
 
 def add_letter(polygons, alpha, x, y, z):
   if (alpha == 0):
@@ -685,7 +687,9 @@ def add_letter_z(polygons, x, y, z):
                           p2[0]+x, p2[1]+y, p2[2]+z)
     point += 3
 
-
+#########################
+# end of alphabet stuff #
+#########################
 
 def add_polygon( polygons, x0, y0, z0, x1, y1, z1, x2, y2, z2 ):
   add_point(polygons, x0, y0, z0);

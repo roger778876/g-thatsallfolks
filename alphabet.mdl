@@ -1,0 +1,111 @@
+frames 10
+basename alphabet
+push
+move 0 400 0
+letter 0 0 0 0
+pop
+push
+move 70 400 0
+letter 1 0 0 0
+pop
+push
+move 135 400 0
+letter 2 0 0 0
+pop
+push
+move 200 400 0
+letter 3 0 0 0
+pop
+push
+move 265 400 0
+letter 4 0 0 0
+pop
+push
+move 320 400 0
+letter 5 0 0 0
+pop
+push
+move 375 400 0
+letter 6 0 0 0
+pop
+push
+move 440 400 0
+letter 7 0 0 0
+pop
+push
+move 25 280 0
+letter 8 0 0 0
+pop
+push
+move 60 280 0
+letter 9 0 0 0
+pop
+push
+move 125 280 0
+letter 10 0 0 0
+pop
+push
+move 195 280 0
+letter 11 0 0 0
+pop
+push
+move 250 280 0
+letter 12 0 0 0
+pop
+push
+move 345 280 0
+letter 13 0 0 0
+pop
+push
+move 420 280 0
+letter 14 0 0 0
+pop
+push
+move 10 160 0
+letter 15 0 0 0
+pop
+push
+move 75 160 0
+letter 16 0 0 0
+pop
+push
+move 143 160 0
+letter 17 0 0 0
+pop
+push
+move 210 160 0
+letter 18 0 0 0
+pop
+push
+move 275 160 0
+letter 19 0 0 0
+pop
+push
+move 345 160 0
+letter 20 0 0 0
+pop
+push
+move 420 160 0
+letter 21 0 0 0
+pop
+push
+move 5 40 0
+letter 22 0 0 0
+pop
+push
+move 115 40 0
+letter 23 0 0 0
+pop
+push
+move 190 40 0
+letter 24 0 0 0
+pop
+push
+move 260 40 0
+letter 25 0 0 0
+pop
+push
+move 400 85 0
+rotate y 360 spin
+sphere 0 0 0 50
+vary spin 0 9 0 1
