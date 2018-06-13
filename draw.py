@@ -51,7 +51,18 @@ def scanline_convert(polygons, i, screen, zbuffer, color ):
       x1 = points[MID][0]
       z1 = points[MID][2]
 
-def add_letter_a(polygons, x, y, z, bogus):
+def add_letter(polygons, alpha, x, y, z):
+  if (alpha == 0):
+    add_letter_a(polygons, x, y, z)
+  elif (alpha == 1):
+    add_letter_b(polygons, x, y, z)
+  elif (alpha == 2):
+    add_letter_c(polygons, x, y, z)
+  elif (alpha == 3):
+    add_letter_d(polygons, x, y, z)
+
+
+def add_letter_a(polygons, x, y, z):
   coords = [[0,0,0],[19,0,0],[19,97,0],
             [19,0,0],[31,67,0],[19,97,0],
             [31,67,0],[45,97,0],[19,97,0],
@@ -68,12 +79,9 @@ def add_letter_a(polygons, x, y, z, bogus):
     add_polygon(polygons, p0[0]+x, p0[1]+y, p0[2]+z,
                           p1[0]+x, p1[1]+y, p1[2]+z,
                           p2[0]+x, p2[1]+y, p2[2]+z)
-    print p0
-    print p1
-    print p2
     point += 3
 
-def add_letter_b(polygons, x, y, z, bogus):
+def add_letter_b(polygons, x, y, z):
   coords = [[0,0,0],[17,97,0],[0,97,0],
             [0,0,0],[17,0,0],[17,97,0],
             [17,0,0],[44,0,0],[39,18,0],
@@ -99,12 +107,9 @@ def add_letter_b(polygons, x, y, z, bogus):
     add_polygon(polygons, p0[0]+x, p0[1]+y, p0[2]+z,
                           p1[0]+x, p1[1]+y, p1[2]+z,
                           p2[0]+x, p2[1]+y, p2[2]+z)
-    print p0
-    print p1
-    print p2
     point += 3
 
-def add_letter_c(polygons, x, y, z, bogus):
+def add_letter_c(polygons, x, y, z):
   coords = [[12,0,0],[18,19,0],[0,13,0],
             [0,13,0],[18,19,0],[0,84,0],
             [18,19,0],[18,79,0],[0,84,0],
@@ -128,12 +133,9 @@ def add_letter_c(polygons, x, y, z, bogus):
     add_polygon(polygons, p0[0]+x, p0[1]+y, p0[2]+z,
                           p1[0]+x, p1[1]+y, p1[2]+z,
                           p2[0]+x, p2[1]+y, p2[2]+z)
-    print p0
-    print p1
-    print p2
     point += 3
 
-def add_letter_d(polygons, x, y, z, bogus):
+def add_letter_d(polygons, x, y, z):
   coords = [[0,0,0],[18,18,0],[44,0,0],
             [0,0,0],[18,18,0],[0,98,0],
             [18,18,0],[18,98,0],[0,98,0],
