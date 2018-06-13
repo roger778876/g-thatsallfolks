@@ -162,7 +162,8 @@ def run(filename):
           if (not isinstance(args[i], basestring)):
             args[i] = args[i] * symbols[knob][1]
 
-
+      # add alphabetical letters
+      # first argument is int from 0-25, each representing letter of alphabet
       if c == "letter":
         add_letter(tmp, args[0], args[1], args[2], args[3])
         matrix_mult( stack[-1], tmp )
