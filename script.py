@@ -162,7 +162,15 @@ def run(filename):
           if (not isinstance(args[i], basestring)):
             args[i] = args[i] * symbols[knob][1]
 
-      if c == 'box':
+      if c == "letter_a":
+        add_letter_a(tmp, args[0], args[1], args[2])
+        matrix_mult( stack[-1], tmp )
+        draw_polygons(tmp, screen, zbuffer, view, ambient, light, areflect, dreflect, sreflect)
+        tmp = []
+
+
+
+      elif c == 'box':
         if isinstance(args[0], str):
           consts = args[0]
           args = args[1:]
@@ -175,8 +183,9 @@ def run(filename):
         draw_polygons(tmp, screen, zbuffer, view, ambient, light, areflect, dreflect, sreflect)
         tmp = []
       elif c == 'sphere':
-        add_sphere(tmp,
-               args[0], args[1], args[2], args[3], step_3d)
+        # add_sphere(tmp,
+        #        args[0], args[1], args[2], args[3], step_3d)
+        add_letter_b(tmp, args[0], args[1], args[2], args[3])
         matrix_mult( stack[-1], tmp )
         draw_polygons(tmp, screen, zbuffer, view, ambient, light, areflect, dreflect, sreflect)
         tmp = []
